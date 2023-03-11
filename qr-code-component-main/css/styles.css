@@ -35,7 +35,7 @@ body {
   border-radius: 12px;
 }
 
-#card h2 {
+#card h1 {
   padding-inline: 5%;
   color: var(--dark-blue, hsl(218, 44%, 22%));
   font-size: 24px;

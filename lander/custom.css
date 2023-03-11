@@ -1,0 +1,7 @@
+#app { max-width: 1440px; margin-inline: auto; margin-block-start: 2rem; }
+#app h1 { text-align: center; }
+.cards--container { display: flex; flex-wrap: wrap; justify-content: center; gap: .85rem; }
+.card { display: block; max-width: 250px; background-color: #fff; padding: 10px; border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; text-decoration: none; text-align: center; transition: all .3s; }
+.card img { max-width: 100%; opacity: .7; aspect-ratio: 16/9; object-fit: cover; transition: all .3s; }
+.card:hover { box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+.card:hover img { opacity: 1; }

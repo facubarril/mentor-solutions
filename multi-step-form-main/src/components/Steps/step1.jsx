@@ -1,12 +1,13 @@
 import InputGroup from '../Form/InputGroup'
 import { useStore } from '../../sotre/storeProvider'
+import './Steps.component.css'
 
 const Step1 = () => {
   const store = useStore();
-  const { name, email, phone } = store[0]
+  const { name, email, phone } = store[1]
 
   return (
-    <article className="step_1">
+    <article className="step step_1">
       <h1>Personal info</h1>
       <p>Please provide your name, email address, and phone number.</p>
 

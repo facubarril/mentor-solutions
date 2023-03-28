@@ -1,5 +1,6 @@
 import { useDispatch } from "../../sotre/storeProvider";
 import { types } from "../../sotre/storeReducer";
+import './inputGroup.component.css'
 
 const InputGroup = ({name, type, placeholder, value, prov}) => {
   const nameL = name.replaceAll(' ', '-').toLowerCase();
@@ -7,7 +8,7 @@ const InputGroup = ({name, type, placeholder, value, prov}) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="input-group">
+    <div className='input_group'>
       <label htmlFor={nameL} className={`${nameL}-label`}>{name}</label>
       <input
         type={typeL}

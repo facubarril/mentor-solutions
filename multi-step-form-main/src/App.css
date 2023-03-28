@@ -1,0 +1,40 @@
+#root {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto max-content;
+}
+
+/* Container */
+#container {
+  width: 100%;
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    display: grid;
+    grid-template-columns: 3.5fr 7.5fr;
+    background: var(--neutral-white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+/* !Container */
+
+/* Aside */
+#container aside {
+  border-radius: 8px;
+  background: url('./assets/img/bg-sidebar-desktop.svg') no-repeat left bottom / cover;
+}
+/* !Aside */
+
+/* Section */
+#container section {
+  padding: 1rem 5rem 1rem 6rem;
+}

@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2.5rem 1.5rem 10rem;
+}
+nav div {
+  position: relative;
+  padding-inline-start: 3rem;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: var(--neutral-light-gray);
+  cursor: pointer;
+}
+nav div::before {
+  content: attr(data-step);
+  display: grid;
+  place-items: center;
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--neutral-light-gray);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+nav div.active::before {
+  color: var(--primary-marine-blue);
+  background-color: var(--primary-light-blue);
+}
+nav div h3 { margin: 0; }

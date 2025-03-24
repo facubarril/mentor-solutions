@@ -85,7 +85,7 @@ body {
                 }
             }
 
-            button {
+            a {
                 border: 0;
                 background-color: var(--bg-default);
                 border: 1px solid var(--bg-dark);
@@ -340,7 +340,7 @@ body {
 
         main {
             > header {
-                button {
+                a {
                     &::before {
                         background-image: var(--theme-light-toggler-svg);
                     }
@@ -354,7 +354,7 @@ body {
 
         main {
             > header {
-                button {
+                a {
                     &::before {
                         background-image: var(--theme-dark-toggler-svg);
                     }

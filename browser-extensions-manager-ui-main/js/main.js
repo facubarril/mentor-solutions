@@ -24,7 +24,13 @@ const loadExtensions = () => {
                     <footer>
                         <button class="remove">Remove</button>
                         <span class="toggle">
-                            <input type="checkbox" name="name-${i}" class="enable" ${extension.isActive ? 'checked' : ''} aria-label="Enable/Disable">
+                            <input
+                                type="checkbox"
+                                id="name-${i}"
+                                name="name-${i}"
+                                class="enable" ${extension.isActive ? 'checked' : ''}
+                                aria-label="Enable/Disable"
+                            >
                             <label class="slider" for="name-${i}"></label>
                         </span>
                     </footer>

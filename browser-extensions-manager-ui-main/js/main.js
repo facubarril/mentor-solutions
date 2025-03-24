@@ -9,23 +9,23 @@ const loadExtensions = () => {
     fetch('./data.json')
         .then((res) => res.json())
         .then((data) => {
-            data.forEach((extension) => {
+            data.forEach((extension, i) => {
                 const extensionElement = document.createElement('article');
                 extensionElement.className= extension.isActive ? 'extension active' : 'extension';
 
                 extensionElement.innerHTML = `
                     <header>
                         <img src="${extension.logo}" alt="${extension.name}">
-                        <section>
+                        <span>
                             <h3>${extension.name}</h3>
                             <p>${extension.description}</p>
-                        </section>
+                        </span>
                     </header>
                     <footer>
                         <button class="remove">Remove</button>
                         <span class="toggle">
-                            <input type="checkbox" class="enable" ${extension.isActive ? 'checked' : ''}>
-                            <span class="slider"></span>
+                            <input type="checkbox" name="name-${i}" class="enable" ${extension.isActive ? 'checked' : ''}>
+                            <label class="slider" for="name-${i}"></label>
                         </span>
                     </footer>
                 `;

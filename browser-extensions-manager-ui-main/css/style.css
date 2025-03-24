@@ -95,6 +95,8 @@ body {
                 transition: box-shadow .2s, background-color .2s;
                 cursor: pointer;
 
+                span { display: none; }
+
                 &::before {
                     content: '';
                     display: block;

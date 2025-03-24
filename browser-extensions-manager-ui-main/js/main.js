@@ -16,15 +16,15 @@ const loadExtensions = () => {
                 extensionElement.innerHTML = `
                     <header>
                         <img src="${extension.logo}" alt="${extension.name}">
-                        <span>
+                        <div>
                             <h3>${extension.name}</h3>
                             <p>${extension.description}</p>
-                        </span>
+                        </div>
                     </header>
                     <footer>
                         <button class="remove">Remove</button>
                         <span class="toggle">
-                            <input type="checkbox" name="name-${i}" class="enable" ${extension.isActive ? 'checked' : ''}>
+                            <input type="checkbox" name="name-${i}" class="enable" ${extension.isActive ? 'checked' : ''} aria-label="Enable/Disable">
                             <label class="slider" for="name-${i}"></label>
                         </span>
                     </footer>
